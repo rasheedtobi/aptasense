@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div>
+      <label>Filter by:</label>
+      <button onclick="filter('all')">All</button>
+      <button onclick="filter('gold')">Material</button>
+      <button onclick="filter('aptamer')">Aptamer</button>
+    </div>
+
+    <div>
+      <label>Sort by:</label>
+      <button onclick="sort('name')">Name</button>
+      <button onclick="sort('description')">Description</button>
+    </div>
+
+    <div id="gallery">
+      <!-- Cards will be dynamically added here -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
